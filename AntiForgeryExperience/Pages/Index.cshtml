@@ -1,0 +1,33 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model AntiForgeryExperience.Dto.BookDto
+
+<h2>Добавление книги</h2>
+<form method="post" asp-controller="Books" asp-action="CreateBook">
+	<p>
+		<label asp-for="@Model.Title">Название</label><br />
+		<input type="text" asp-for="@Model.Title" />
+	</p>
+	<p>
+		<label asp-for="@Model.Author">Автор</label><br />
+		<input type="text" asp-for="@Model.Author" />
+	</p>
+	<p>
+		<label asp-for="@Model.Publisher">Издатель</label><br />
+		<input type="text" asp-for="@Model.Publisher" />
+	</p>
+	<p>
+		<label asp-for="@Model.Country">Страна</label><br />
+		<input type="text" asp-for="@Model.Country" />
+	</p>
+	<p>
+		<label asp-for="@Model.PagesQuantity">Количество страниц</label><br />
+		<input asp-for="@Model.PagesQuantity" />
+	</p>
+	<p>
+		<label asp-for="@Model.ReleaseDate">Дата издания первого тиража</label><br />
+		<input type="date" asp-for="@Model.ReleaseDate" />
+	</p>
+	<input type="submit" value="Отправить" />
+</form>

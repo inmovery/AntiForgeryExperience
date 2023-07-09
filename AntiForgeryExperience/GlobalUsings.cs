@@ -1,0 +1,23 @@
+﻿global using System;
+global using System.Reflection;
+global using System.Diagnostics;
+global using System.Net.Mime;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.RazorPages;
+global using Microsoft.AspNetCore.Antiforgery;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Serilog;
+global using AutoMapper;
+global using AntiForgeryExperience.Contracts.Repositories;
+global using AntiForgeryExperience.Entities;
+global using AntiForgeryExperience.Persistence;
+global using AntiForgeryExperience.Dto;
+global using AntiForgeryExperience.Security.AntiForgery;
+global using AntiForgeryExperience.Configuration;
+global using AntiForgeryExperience.Extensions;
+global using AntiForgeryExperience.Contracts.Security;
+global using AntiForgeryExperience.Contracts.Entities;
+
+global using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
